@@ -131,10 +131,19 @@ export interface Options {
 
   /**
    * Export frontmatter in component module
+   * under the frontmatter key
    *
    * @default true
    */
   exportFrontmatter?: boolean
+
+  /**
+   * Export frontmatter in component module
+   * property by property
+   *
+   * @default true
+   */
+  exportFrontmatterProperties?: boolean
 
   /**
    * Add `v-pre` to `<code>` tag to escape curly brackets interpolation

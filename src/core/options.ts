@@ -10,6 +10,7 @@ export function resolveOptions(userOptions: Options): ResolvedOptions {
     exposeFrontmatter: true,
     exposeExcerpt: false,
     exportFrontmatter: true,
+    exportFrontmatterProperties: false,
     escapeCodeTagInterpolation: true,
     customSfcBlocks: ['route', 'i18n', 'style'],
     componentOptions: {},

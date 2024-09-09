@@ -170,6 +170,9 @@ export async function createMarkdown(options: ResolvedOptions) {
       scriptLines.push(`const frontmatter = ${JSON.stringify(frontmatter)}`)
 
       if (options.exportFrontmatter) {
+        frontmatterExportsLines = [`export const frontmatter = ${JSON.stringify(frontmatter)}`]
+      }
+      if (options.exportFrontmatterProperties) {
         frontmatterExportsLines = Object.entries(frontmatter)
           .map(([key, value]) => {
             if (EXPORTS_KEYWORDS.includes(key))
